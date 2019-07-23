@@ -6,8 +6,8 @@
                 "AllocatedStorage": "20",
                 "AvailabilityZone": "us-east-1a",
                 "DBInstanceClass": "db.m4.large",
-                "DBInstanceIdentifier": "mydbinsta4",
-                "DBName": "mydbinsta4",
+                "DBInstanceIdentifier": "mydbinsta14",
+                "DBName": "mydbinsta14",
                 "VPCSecurityGroups": [
                     {
                         "Fn::GetAtt": [
