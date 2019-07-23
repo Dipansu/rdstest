@@ -1,0 +1,44 @@
+{
+    "Resources": {
+        "MyDB": {
+            "Type": "AWS::RDS::DBInstance",
+            "Properties": {
+                "AllocatedStorage": "20",
+                "AvailabilityZone": "us-east-1a",
+                "DBInstanceClass": "db.m4.large",
+                "DBInstanceIdentifier": "mydbinsta4",
+                "DBName": "mydbinsta4",
+                "VPCSecurityGroups": [
+                    {
+                        "Fn::GetAtt": [
+                            "DBEC2SecurityGroup",
+                            "GroupId"
+                        ]
+                    }
+                ],
+                "DeleteAutomatedBackups": true,
+                "Engine": "MySQL",
+                "MasterUsername": "dipansu123",
+                "MasterUserPassword": "dipansu123",
+                "Port": "3306",
+                "PubliclyAccessible": true
+                
+            }
+        },
+        "DBEC2SecurityGroup": {
+            "Type": "AWS::EC2::SecurityGroup",
+            "Properties": {
+                "GroupDescription": "Open database for access",
+                "SecurityGroupIngress": [
+                    {
+                        "IpProtocol": "tcp",
+                        "FromPort": "3306",
+                        "ToPort": "3306",
+						"CidrIp": "49.33.196.140/32"
+                       
+                    }
+                ]
+            }
+        }
+    }
+}
