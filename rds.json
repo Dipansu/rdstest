@@ -1,3 +1,5 @@
+
+    
 {
     "Resources": {
         "MyDB": {
@@ -5,8 +7,10 @@
             "Properties": {
                 "AllocatedStorage": "20",
                 "AvailabilityZone": "us-east-1a",
-                "DBInstanceClass": "db.m4.large",
-                "DBInstanceIdentifier": "mydbinsta145",
+                "DBInstanceClass": "db.m1.large",
+                "DBInstanceIdentifier":  {
+                    "Ref": "DBinst"
+                },
                 "DBName": "mydbinsta145",
                 "VPCSecurityGroups": [
                     {
@@ -18,8 +22,12 @@
                 ],
                 "DeleteAutomatedBackups": true,
                 "Engine": "MySQL",
-                "MasterUsername": "dipansu123",
-                "MasterUserPassword": "dipansu123",
+                "MasterUsername": {
+                    "Ref": "MasterUser"
+                },
+                "MasterUserPassword": {
+                    "Ref": "MasterPass"
+                },
                 "Port": "3306",
                 "PubliclyAccessible": true
                 
@@ -40,5 +48,20 @@
                 ]
             }
         }
-    }
+    },
+	"Parameters":{
+		"DBInst":{
+			"Description":"the instance name",
+			"Type":"String"
+		},
+		"MasterUser":{
+			"Description":"the master user name",
+			"Type":"String"
+		},
+		"MasterPass":{
+			"Description":"the master user name",
+			"Type":"String"
+		}	
+	}
 }
+
