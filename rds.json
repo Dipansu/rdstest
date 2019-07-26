@@ -9,7 +9,7 @@
                 "AvailabilityZone": "us-east-1a",
                 "DBInstanceClass": "db.m1.large",
                 "DBInstanceIdentifier":  {
-                    "Ref": "DBinst"
+                    "Ref": "DBInst"
                 },
                 "DBName": "mydbinsta145",
                 "VPCSecurityGroups": [
