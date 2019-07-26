@@ -8,8 +8,8 @@
                 "AllocatedStorage": "20",
                 "AvailabilityZone": "us-east-1a",
                 "DBInstanceClass": "db.m4.large",
-                "DBInstanceIdentifier": "jjjhhhg",
-                "DBName":  "jjjhhg",
+                "DBInstanceIdentifier":{"Ref": "DBInst"},
+                "DBName":{"Ref": "DBInst"},
                 "VPCSecurityGroups": [
                     {
                         "Fn::GetAtt": [
@@ -48,7 +48,10 @@
         }
     },
 	"Parameters":{
-		
+		"DBInst":{
+			"Description":"the instance name",
+			"Type":"String"
+		},
 		"MasterUser":{
 			"Description":"the master user name",
 			"Type":"String"
