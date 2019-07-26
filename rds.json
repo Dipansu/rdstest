@@ -54,8 +54,7 @@
 	"Parameters":{
 		"DBInst":{
 			"Description":"the instance name",
-			"Type":"String",
-			"Default":"mydbnew345aa"
+			"Type":"String"
 		},
 		"MasterUser":{
 			"Description":"the master user name",
