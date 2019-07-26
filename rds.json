@@ -7,7 +7,7 @@
             "Properties": {
                 "AllocatedStorage": "20",
                 "AvailabilityZone": "us-east-1a",
-                "DBInstanceClass": "db.m1.large",
+                "DBInstanceClass": "db.m4.large",
                 "DBInstanceIdentifier": "jjjhhhg",
                 "DBName":  "jjjhhg",
                 "VPCSecurityGroups": [
