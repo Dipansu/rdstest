@@ -1,13 +1,13 @@
  [ 
  {
- "ParameterKey"="DBInst",
- "ParameterValue"="${dbinst}"
+ "ParameterKey":"DBInst",
+ "ParameterValue":"${dbinst}"
  } ,
  {
- "ParameterKey"="MasterUser",
- "ParameterValue"="${masteruser}"
+ "ParameterKey":"MasterUser",
+ "ParameterValue":"${masteruser}"
   },
   {
-  "ParameterKey"="MasterPass",
- "ParameterValue"="${masterpass}"
+  "ParameterKey":"MasterPass",
+ "ParameterValue":"${masterpass}"
   }]
