@@ -11,7 +11,9 @@
                 "DBInstanceIdentifier":  {
                     "Ref": "DBInst"
                 },
-                "DBName": "mydbinsta178",
+                "DBName":  {
+                    "Ref": "DBInst"
+                },
                 "VPCSecurityGroups": [
                     {
                         "Fn::GetAtt": [
