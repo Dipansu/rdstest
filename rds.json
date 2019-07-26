@@ -11,7 +11,7 @@
                 "DBInstanceIdentifier":  {
                     "Ref": "DBInst"
                 },
-                "DBName": "mydbinsta145",
+                "DBName": "mydbinsta178",
                 "VPCSecurityGroups": [
                     {
                         "Fn::GetAtt": [
@@ -52,7 +52,8 @@
 	"Parameters":{
 		"DBInst":{
 			"Description":"the instance name",
-			"Type":"String"
+			"Type":"String",
+			"Default":"mydbnew345aa"
 		},
 		"MasterUser":{
 			"Description":"the master user name",
