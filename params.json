@@ -1,8 +1,5 @@
  [ 
- {
- "ParameterKey":"DBInst",
- "ParameterValue":"${dbinst}"
- } ,
+
  {
  "ParameterKey":"MasterUser",
  "ParameterValue":"${masteruser}"
